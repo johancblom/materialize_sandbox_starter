@@ -11,17 +11,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Materialize Sandbox</title>
-  <style>
-    .input-field {
-      margin-bottom: 30px;
-    }
-  </style>
 </head>
 
 <body>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align">Basic Form & Input</h1>
+      <h1 class="center-align">Collections & Badges</h1>
     </div>
   </div>
   <div class="container">
@@ -128,120 +123,141 @@
     <br>
 
     <!-- START HERE -->
-    <form>
-      <!-- TEXT FIELD -->
-      <div class="input-field">
-        <input placeholder="Name" id="name" type="text">
-        <label for="name">Name</label>
-      </div>
 
-      <!-- VALUE & DISABLED -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email">
-        <label for="email">Email</label>
-      </div>
+    <!-- COLLECTION -->
+    <ul class="collection">
+      <li class="collection-item">First Item</li>
+      <li class="collection-item">Second Item</li>
+      <li class="collection-item">Third Item</li>
+      <li class="collection-item">Fourth Item</li>
+    </ul>
 
-      <!-- TEXTAREA -->
-      <div class="input-field">
-        <textarea placeholder="Message" id="message" class="materialize-textarea"></textarea>
-        <label for="message">Message</label>
-      </div>
+    <!-- COLLECTION AS LINKS -->
+    <div class="collection">
+      <a href="#" class="collection-item">First Item</a>
+      <a href="#" class="collection-item">Second Item</a>
+      <a href="#" class="collection-item">Third Item</a>
+      <a href="#" class="collection-item">Fourth Item</a>
+      <!-- BADGES -->
+      <a href="#!" class="collection-item">
+        <span class="badge">44</span>Fifth Item</a>
+      <a href="#!" class="collection-item">
+        <span class="badge new">3</span>Sixth Item</a>
+    </div>
 
-      <!-- INLINE FIELD -->
-      Number of users:
-      <div class="input-field inline">
-        <input id="users" type="text">
-        <label for="users">#</label>
-      </div>
+    <!-- WITH HEADER -->
+    <ul class="collection with-header">
+      <li class="collection-header">
+        <h4>Items</h4>
+      </li>
+      <li class="collection-item">First Item</li>
+      <li class="collection-item">Second Item</li>
+      <li class="collection-item">Third Item</li>
+      <li class="collection-item">Fourth Item</li>
+    </ul>
 
-      <!-- ICON PREFIX -->
-      <div class="input-field">
-        <i class="material-icons prefix">phone</i>
-		<input id="phone" type="tel">
-        <label for="phone">Phone Number</label>
-      </div>
+    <!-- SECONDARY CONTENT -->
+    <ul class="collection with-header">
+      <li class="collection-header">
+        <h4>Items</h4>
+      </li>
+      <li class="collection-item">
+        <div>First Item
+          <a href="#" class="secondary-content">
+            <i class="material-icons">close</i>
+          </a>
+        </div>
+      </li>
+      <li class="collection-item">
+        <div>Second Item
+          <a href="#" class="secondary-content">
+            <i class="material-icons">close</i>
+          </a>
+        </div>
+      </li>
+      <li class="collection-item">
+        <div>Third Item
+          <a href="#" class="secondary-content">
+            <i class="material-icons">close</i>
+          </a>
+        </div>
+      </li>
+      <li class="collection-item">
+        <div>Fourth Item
+          <a href="#" class="secondary-content">
+            <i class="material-icons">close</i>
+          </a>
+        </div>
+      </li>
+    </ul>
 
-      <!-- VALIDATION & ERROR -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email" class="validate">
-        <label data-error="Invalid" data-success="Valid" for="email">Email</label>
-      </div>
+    <!-- AVATAR CONTENT -->
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons blue circle">contacts</i>
+        <span class="title">John Doe</span>
+        <p>jdoe@gmail.com
+          <br> 555-555-5555
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons blue circle">contacts</i>
+        <span class="title">Steve Smith</span>
+        <p>steve@gmail.com
+          <br> 555-555-5555
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons blue circle">contacts</i>
+        <span class="title">Karen Johnson</span>
+        <p>karen@gmail.com
+          <br> 555-555-5555
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons blue circle">contacts</i>
+        <span class="title">Mary Williams</span>
+        <p>mary@gmail.com
+          <br> 555-555-5555
+        </p>
+        <a href="#" class="secondary-content">
+          <i class="material-icons">grade</i>
+        </a>
+      </li>
+    </ul>
 
-      <!-- SELECT (Must be initialized) -->
-      <div class="input-field">
-        <select>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Select List</label>
-      </div>
+    <!-- BADGE IN DROPDOWN -->
+    <a href="#!" class="btn dropdown-button" data-activates="dropdown1">Dropdown
+      <i class="material-icons">arrow_drop_down</i>
+    </a>
 
-      <!-- OPTION GROUPS -->
-      <div class="input-field">
-        <select>
-			<optgroup label="option Group 1">
-				<option value="123">123</option>
-			</optgroup>
-			<optgroup label="option Group 2">
-				<option value="234">234</option>
-				<option value="345">345</option>
-				<option value="456">456</option>
-			</optgroup>
-        </select>
-        <label>Option Group Select</label>
-      </div>
-
-      <!-- MULTIPLE SELECT -->
-      <div class="input-field">
-        <select multiple>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Multiple Select</label>
-      </div>
-
-      <!-- RADIO BUTTONS -->
-	  <p>
-		<input type="radio" name="gender" id="male" checked>
-		<label for="male">Male</label>
-	  </p>
-	  <p>
-		<input class="with-gap" type="radio" name="gender" id="female">
-		<label for="female">Female</label>
-	  </p>
-      <br>
-      <br>
-
-      <!-- CHECKBOXES -->
-	  <p>
-	    <input type="checkbox" id="html" name="tech">
-		<label for="html">HTML</label>
-	  </p>
-<p>
-	    <input type="checkbox" id="css" name="tech">
-		<label for="css">CSS</label>
-	  </p>
-	  <p>
-	    <input type="checkbox" id="js" name="tech" class="filled-in">
-		<label for="js">JavaScript</label>
-	  </p>
-	  <p>
-	    <input disabled type="checkbox" id="php" name="tech">
-		<label for="php">PHP</label>
-	  </p>
-
-      <br>
-      <br>
-      <div>
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
-
-
+    <ul class="dropdown-content" id="dropdown1">
+      <li>
+        <a href="">Item 1
+          <span class="badge">44</span>
+        </a>
+      </li>
+      <li>
+        <a href="">Item 2
+          <span class="badge new">3</span>
+        </a>
+      </li>
+      <li>
+        <a href="">Item 3</a>
+      </li>
+      <li>
+        <a href="">Item 4</a>
+      </li>
+    </ul>
 
     <!-- END HERE -->
 
@@ -249,7 +265,8 @@
   </div>
   <!-- ./ CONTAINER END -->
 
-
+  <!-- MOVES CONTENT UP -->
+  <div style="margin-top: 500px;"></div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -265,9 +282,7 @@
       });
 
       // JAVASCRIPT START HERE //
-	  
-	  // INIT SELECT List
-	  $('select').material_select();
+
 
 
 

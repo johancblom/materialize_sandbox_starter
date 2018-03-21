@@ -4,6 +4,8 @@
 <head>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
@@ -11,17 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Materialize Sandbox</title>
-  <style>
-    .input-field {
-      margin-bottom: 30px;
-    }
-  </style>
 </head>
 
 <body>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align">Basic Form & Input</h1>
+      <h1 class="center-align">Buttons & Icons</h1>
     </div>
   </div>
   <div class="container">
@@ -128,120 +125,72 @@
     <br>
 
     <!-- START HERE -->
-    <form>
-      <!-- TEXT FIELD -->
-      <div class="input-field">
-        <input placeholder="Name" id="name" type="text">
-        <label for="name">Name</label>
-      </div>
 
-      <!-- VALUE & DISABLED -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email">
-        <label for="email">Email</label>
-      </div>
+    <!-- STANDARD BUTTON -->
+    <button class="btn">Read More</button>
+    <a class="btn">Read More</a>
 
-      <!-- TEXTAREA -->
-      <div class="input-field">
-        <textarea placeholder="Message" id="message" class="materialize-textarea"></textarea>
-        <label for="message">Message</label>
-      </div>
+    <!-- WAVES EFFECT -->
+    <button class="btn waves-effect waves-light">Read More</button>
+    <a class="btn waves-effect waves-light">Read More</a>
 
-      <!-- INLINE FIELD -->
-      Number of users:
-      <div class="input-field inline">
-        <input id="users" type="text">
-        <label for="users">#</label>
-      </div>
+    <!-- WAVE COLORS -->
+    <button class="btn white red-text waves-effect waves-red">Read More</button>
+    <button class="btn white teal-text waves-effect waves-teal">Read More</button>
+    <button class="btn white green-text waves-effect waves-green">Read More</button>
+    <button class="btn white grey-text waves-effect waves-yellow">Read More</button>
+    <button class="btn white purple-text waves-effect waves-purple">Read More</button>
 
-      <!-- ICON PREFIX -->
-      <div class="input-field">
-        <i class="material-icons prefix">phone</i>
-		<input id="phone" type="tel">
-        <label for="phone">Phone Number</label>
-      </div>
+    <br>
+    <br>
 
-      <!-- VALIDATION & ERROR -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email" class="validate">
-        <label data-error="Invalid" data-success="Valid" for="email">Email</label>
-      </div>
+    <!-- MATERIAL ICONS (https://material.io/icons) -->
+    <i class="material-icons">shopping_cart</i>
+    <i class="material-icons red-text">settings</i>
+    <i class="material-icons blue-text">search</i>
+    <i class="material-icons">stars</i>
 
-      <!-- SELECT (Must be initialized) -->
-      <div class="input-field">
-        <select>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Select List</label>
-      </div>
+    <br>
+    <br>
 
-      <!-- OPTION GROUPS -->
-      <div class="input-field">
-        <select>
-			<optgroup label="option Group 1">
-				<option value="123">123</option>
-			</optgroup>
-			<optgroup label="option Group 2">
-				<option value="234">234</option>
-				<option value="345">345</option>
-				<option value="456">456</option>
-			</optgroup>
-        </select>
-        <label>Option Group Select</label>
-      </div>
+    <!-- ICON SIZES -->
+    <i class="material-icons large">done</i>
+    <i class="material-icons medium">done</i>
+    <i class="material-icons small">done</i>
+    <i class="material-icons tiny">done</i>
 
-      <!-- MULTIPLE SELECT -->
-      <div class="input-field">
-        <select multiple>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Multiple Select</label>
-      </div>
+    <br>
+    <br>
 
-      <!-- RADIO BUTTONS -->
-	  <p>
-		<input type="radio" name="gender" id="male" checked>
-		<label for="male">Male</label>
-	  </p>
-	  <p>
-		<input class="with-gap" type="radio" name="gender" id="female">
-		<label for="female">Female</label>
-	  </p>
-      <br>
-      <br>
+    <!-- BUTTON WITH MATERIAL ICON -->
+    <a class="btn waves-effect waves-light" href="#!">
+      <i class="material-icons left">shopping_cart</i> Buy Now</a>
+    <a class="btn waves-effect waves-light" href="#!">
+      <i class="material-icons right">shopping_cart</i> Buy Now</a>
+    <!-- BUTTON WITH FONT AWESOME ICON -->
+    <a class="btn waves-effect waves-light" href="#!">
+      <i class="fa fa-shopping-cart left"></i> Buy Now</a>
+    <br>
+    <br>
 
-      <!-- CHECKBOXES -->
-	  <p>
-	    <input type="checkbox" id="html" name="tech">
-		<label for="html">HTML</label>
-	  </p>
-<p>
-	    <input type="checkbox" id="css" name="tech">
-		<label for="css">CSS</label>
-	  </p>
-	  <p>
-	    <input type="checkbox" id="js" name="tech" class="filled-in">
-		<label for="js">JavaScript</label>
-	  </p>
-	  <p>
-	    <input disabled type="checkbox" id="php" name="tech">
-		<label for="php">PHP</label>
-	  </p>
+    <!-- COLORED BUTTONS -->
+    <button class="btn red">Read More</button>
+    <button class="btn purple">Read More</button>
+    <button class="btn orange">Read More</button>
+    <button class="btn teal">Read More</button>
+    <button class="btn black">Read More</button>
+    <button class="btn amber">Read More</button>
 
-      <br>
-      <br>
-      <div>
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
+    <br>
+    <br>
 
+    <!-- LARGE BUTTON -->
+    <button class="btn-large">Large Button</button>
+    <!-- DISABLED BUTTON -->
+    <button class="btn-large disabled">Disabled Button</button>
 
+    <br>
+    <br>
 
     <!-- END HERE -->
 
@@ -249,7 +198,8 @@
   </div>
   <!-- ./ CONTAINER END -->
 
-
+  <!-- MOVES CONTENT UP -->
+  <div style="margin-top: 500px;"></div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -265,9 +215,7 @@
       });
 
       // JAVASCRIPT START HERE //
-	  
-	  // INIT SELECT List
-	  $('select').material_select();
+
 
 
 

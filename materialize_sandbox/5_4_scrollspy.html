@@ -11,17 +11,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Materialize Sandbox</title>
-  <style>
-    .input-field {
-      margin-bottom: 30px;
-    }
-  </style>
 </head>
 
 <body>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align">Basic Form & Input</h1>
+      <h1 class="center-align">Scrollspy</h1>
     </div>
   </div>
   <div class="container">
@@ -128,120 +123,52 @@
     <br>
 
     <!-- START HERE -->
-    <form>
-      <!-- TEXT FIELD -->
-      <div class="input-field">
-        <input placeholder="Name" id="name" type="text">
-        <label for="name">Name</label>
+
+    <!-- SCROLLSPY -->
+    <div class="row">
+      <div class="col m9 l10 s12">
+        <div id="who" class="section scrollspy">
+          <h4>Who Are We?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis laborum tenetur tempora quo ipsum! Nisi nobis,
+            dolorem excepturi quia rem architecto cupiditate repudiandae delectus nihil, commodi, accusamus corrupti obcaecati
+            sequi fuga a ipsum. Labore earum corrupti voluptatibus placeat blanditiis saepe, id officiis quas nesciunt. Voluptate,
+          </p>
+        </div>
+
+        <div id="what" class="section scrollspy">
+          <h4>What Do We Do?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis laborum tenetur tempora quo ipsum! Nisi nobis,
+            dolorem excepturi quia rem architecto cupiditate repudiandae delectus nihil, commodi, accusamus corrupti obcaecati
+            sequi fuga a ipsum. Labore earum corrupti voluptatibus placeat blanditiis saepe, id officiis quas nesciunt. Voluptate,
+          </p>
+        </div>
+
+        <div id="where" class="section scrollspy">
+          <h4>Where Are We?</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis laborum tenetur tempora quo ipsum! Nisi nobis,
+            dolorem excepturi quia rem architecto cupiditate repudiandae delectus nihil, commodi, accusamus corrupti obcaecati
+            sequi fuga a ipsum. Labore earum corrupti voluptatibus placeat blanditiis saepe, id officiis quas nesciunt. Voluptate,Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Facilis laborum tenetur tempora quo ipsum! Nisi nobis, dolorem
+            excepturi quia rem architecto cupiditate repudiandae delectus nihil, commodi, accusamus corrupti obcaecati sequi
+            fuga a ipsum. Labore earum corrupti voluptatibus placeat blanditiis saepe, id officiis quas nesciunt. Voluptate,
+          </p>
+        </div>
       </div>
-
-      <!-- VALUE & DISABLED -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email">
-        <label for="email">Email</label>
+      <div class="col hide-on-small-only m3 l2 s12">
+        <ul class="pinned section table-of-contents">
+          <li>
+            <a href="#who">Who We Are</a>
+          </li>
+          <li>
+            <a href="#what">What We Do</a>
+          </li>
+          <li>
+            <a href="#where">Where We Are</a>
+          </li>
+        </ul>
       </div>
-
-      <!-- TEXTAREA -->
-      <div class="input-field">
-        <textarea placeholder="Message" id="message" class="materialize-textarea"></textarea>
-        <label for="message">Message</label>
-      </div>
-
-      <!-- INLINE FIELD -->
-      Number of users:
-      <div class="input-field inline">
-        <input id="users" type="text">
-        <label for="users">#</label>
-      </div>
-
-      <!-- ICON PREFIX -->
-      <div class="input-field">
-        <i class="material-icons prefix">phone</i>
-		<input id="phone" type="tel">
-        <label for="phone">Phone Number</label>
-      </div>
-
-      <!-- VALIDATION & ERROR -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email" class="validate">
-        <label data-error="Invalid" data-success="Valid" for="email">Email</label>
-      </div>
-
-      <!-- SELECT (Must be initialized) -->
-      <div class="input-field">
-        <select>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Select List</label>
-      </div>
-
-      <!-- OPTION GROUPS -->
-      <div class="input-field">
-        <select>
-			<optgroup label="option Group 1">
-				<option value="123">123</option>
-			</optgroup>
-			<optgroup label="option Group 2">
-				<option value="234">234</option>
-				<option value="345">345</option>
-				<option value="456">456</option>
-			</optgroup>
-        </select>
-        <label>Option Group Select</label>
-      </div>
-
-      <!-- MULTIPLE SELECT -->
-      <div class="input-field">
-        <select multiple>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Multiple Select</label>
-      </div>
-
-      <!-- RADIO BUTTONS -->
-	  <p>
-		<input type="radio" name="gender" id="male" checked>
-		<label for="male">Male</label>
-	  </p>
-	  <p>
-		<input class="with-gap" type="radio" name="gender" id="female">
-		<label for="female">Female</label>
-	  </p>
-      <br>
-      <br>
-
-      <!-- CHECKBOXES -->
-	  <p>
-	    <input type="checkbox" id="html" name="tech">
-		<label for="html">HTML</label>
-	  </p>
-<p>
-	    <input type="checkbox" id="css" name="tech">
-		<label for="css">CSS</label>
-	  </p>
-	  <p>
-	    <input type="checkbox" id="js" name="tech" class="filled-in">
-		<label for="js">JavaScript</label>
-	  </p>
-	  <p>
-	    <input disabled type="checkbox" id="php" name="tech">
-		<label for="php">PHP</label>
-	  </p>
-
-      <br>
-      <br>
-      <div>
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
-
-
+    </div>
+    <div style="margin-top:700px;"></div>
 
     <!-- END HERE -->
 
@@ -264,12 +191,8 @@
         alignment: 'left'
       });
 
-      // JAVASCRIPT START HERE //
-	  
-	  // INIT SELECT List
-	  $('select').material_select();
-
-
+      // SCROLLSPY INIT
+      $('.scrollspy').scrollSpy();
 
     });
   </script>

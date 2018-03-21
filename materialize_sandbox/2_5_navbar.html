@@ -11,17 +11,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Materialize Sandbox</title>
-  <style>
-    .input-field {
-      margin-bottom: 30px;
-    }
-  </style>
 </head>
 
 <body>
   <div class="row">
     <div class="col s12">
-      <h1 class="center-align">Basic Form & Input</h1>
+      <h1 class="center-align">Navbar</h1>
     </div>
   </div>
   <div class="container">
@@ -127,129 +122,147 @@
     <br>
     <br>
 
-    <!-- START HERE -->
-    <form>
-      <!-- TEXT FIELD -->
-      <div class="input-field">
-        <input placeholder="Name" id="name" type="text">
-        <label for="name">Name</label>
-      </div>
-
-      <!-- VALUE & DISABLED -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email">
-        <label for="email">Email</label>
-      </div>
-
-      <!-- TEXTAREA -->
-      <div class="input-field">
-        <textarea placeholder="Message" id="message" class="materialize-textarea"></textarea>
-        <label for="message">Message</label>
-      </div>
-
-      <!-- INLINE FIELD -->
-      Number of users:
-      <div class="input-field inline">
-        <input id="users" type="text">
-        <label for="users">#</label>
-      </div>
-
-      <!-- ICON PREFIX -->
-      <div class="input-field">
-        <i class="material-icons prefix">phone</i>
-		<input id="phone" type="tel">
-        <label for="phone">Phone Number</label>
-      </div>
-
-      <!-- VALIDATION & ERROR -->
-      <div class="input-field">
-        <input placeholder="Email" id="email" type="email" class="validate">
-        <label data-error="Invalid" data-success="Valid" for="email">Email</label>
-      </div>
-
-      <!-- SELECT (Must be initialized) -->
-      <div class="input-field">
-        <select>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Select List</label>
-      </div>
-
-      <!-- OPTION GROUPS -->
-      <div class="input-field">
-        <select>
-			<optgroup label="option Group 1">
-				<option value="123">123</option>
-			</optgroup>
-			<optgroup label="option Group 2">
-				<option value="234">234</option>
-				<option value="345">345</option>
-				<option value="456">456</option>
-			</optgroup>
-        </select>
-        <label>Option Group Select</label>
-      </div>
-
-      <!-- MULTIPLE SELECT -->
-      <div class="input-field">
-        <select multiple>
-			<option value="123" selected>123</option>
-			<option value="234">234</option>
-			<option value="345">345</option>
-			<option value="456">456</option>
-        </select>
-        <label>Multiple Select</label>
-      </div>
-
-      <!-- RADIO BUTTONS -->
-	  <p>
-		<input type="radio" name="gender" id="male" checked>
-		<label for="male">Male</label>
-	  </p>
-	  <p>
-		<input class="with-gap" type="radio" name="gender" id="female">
-		<label for="female">Female</label>
-	  </p>
-      <br>
-      <br>
-
-      <!-- CHECKBOXES -->
-	  <p>
-	    <input type="checkbox" id="html" name="tech">
-		<label for="html">HTML</label>
-	  </p>
-<p>
-	    <input type="checkbox" id="css" name="tech">
-		<label for="css">CSS</label>
-	  </p>
-	  <p>
-	    <input type="checkbox" id="js" name="tech" class="filled-in">
-		<label for="js">JavaScript</label>
-	  </p>
-	  <p>
-	    <input disabled type="checkbox" id="php" name="tech">
-		<label for="php">PHP</label>
-	  </p>
-
-      <br>
-      <br>
-      <div>
-        <input type="submit" value="Submit" class="btn">
-      </div>
-    </form>
-
-
-
-    <!-- END HERE -->
-
-
   </div>
   <!-- ./ CONTAINER END -->
 
+  <!-- START HERE -->
 
+  <!-- STANDARD MENU -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-small-and-down">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li class="active">
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+
+  <!-- RESPONSIVE WITH SIDE MENU -->
+  <nav class="blue darken-4">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+
+          <!-- DROPDOWN TRIGGER -->
+          <li>
+            <a class="dropdown-button" data-activates="my-dropdown" href="#!">Dropdown
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+          <!-- BUTTON LINK -->
+          <li>
+            <a class="btn waves-effect waves-light">Login</a>
+          </li>
+          <!-- ICON LINK -->
+          <li>
+            <a href="#">
+              <i class="material-icons">person</i>
+            </a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DROPDOWN MENU -->
+  <ul id="my-dropdown" class="dropdown-content">
+    <li>
+      <a href="#">Link 1</a>
+    </li>
+    <li>
+      <a href="#">Link 2</a>
+    </li>
+    <li>
+      <a href="#">Link 3</a>
+    </li>
+  </ul>
+
+  <br>
+  <br>
+
+  <!-- FIXED NAVBAR -->
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo center">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-small-and-down">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li class="active">
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- SEARCH BAR -->
+  <nav class="green">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input type="search" id="search" required>
+          <label for="search" class="label-icon">
+            <i class="material-icons">search</i>
+          </label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+
+
+  <!-- END HERE -->
+
+  <!-- MOVES CONTENT UP -->
+  <div style="margin-top: 1000px;"></div>
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -265,10 +278,8 @@
       });
 
       // JAVASCRIPT START HERE //
-	  
-	  // INIT SELECT List
-	  $('select').material_select();
 
+      $('.button-collapse').sideNav();
 
 
     });
